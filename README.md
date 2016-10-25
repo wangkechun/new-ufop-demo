@@ -84,7 +84,7 @@ mv qdoractl_linux_0.3 qdoractl
 
 应该就能正常运行了
 
-
+mac 版本： http://q.hi-hi.cn/qdoractl_osx_0.3
 
 先登陆
 
