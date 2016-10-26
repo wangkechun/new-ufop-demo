@@ -215,11 +215,11 @@ Version      Region      Expect      Actual
 目前还没有实例在运行，我们来部署几个实例
 
 ```
-./qdoractl deploy ufop-demo-20161020 v1 --region xs --expect 1
+./qdoractl deploy ufop-demo-20161020 v1 --region nb --expect 1
 ```
 
 ```
-root@iZj6ciwrphxsxe9miuva60Z:~/new-ufop-demo# ./qdoractl deploy ufop-demo-20161020 v1 --region xs --expect 1
+root@iZj6ciwrphxsxe9miuva60Z:~/new-ufop-demo# ./qdoractl deploy ufop-demo-20161020 v1 --region nb --expect 1
 Deploy success
 Please run `./qdoractl deploy ufop-demo-20161020 --id deploy-6ed8c584-96c5-11e6-8541-6c92bf2f06d8-1476968539472398952` to view you deploy
 Please run `./qdoractl release ufop-demo-20161020 v1 -d` to view you release
@@ -236,7 +236,7 @@ Please run `./qdoractl release ufop-demo-20161020 v1 -d` to view you release
 ```
 root@iZj6ciwrphxsxe9miuva60Z:~/new-ufop-demo# ./qdoractl deploy ufop-demo-20161020 --id deploy-98b44a2b-96c5-11e6-8541-6c92bf2f06d8-1476968609619617820
 Version      Expect      Region      Created                  Id                                                                   Status      Message
-v1           1           xs          2016-10-20 21:03:29      deploy-98b44a2b-96c5-11e6-8541-6c92bf2f06d8-1476968609619617820      DONE
+v1           1           nb          2016-10-20 21:03:29      deploy-98b44a2b-96c5-11e6-8541-6c92bf2f06d8-1476968609619617820      DONE
 ```
 
 我们来看看部署的成果
@@ -257,7 +257,7 @@ LogFilePaths:              []
 
 Deploys:
 Region      Expect      Actual
-xs          1           1
+nb          1           1
 ```
 
 现在实例就已经跑起来了，这个时候我们访问这个账号的某个对象存储 bucket 中的一个文件，
