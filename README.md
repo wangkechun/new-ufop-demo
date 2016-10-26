@@ -168,7 +168,7 @@ ufopname: ufop-demo-20161020 # ufop 名称，使用 qdoractl list 命令获取�
 verstr: v1 # 当前版本名称
 image: ufop-demo:v1 # 使用的 image，需要带上 tag, 使用 qdoractl image 命令获取可用 image 列表
 desc:  "hello world" # 描述信息，可选
-flavor: M0C1 # 运行实例的机器配置，不同的配置单实例价格不一样，使用 qdoractl flavor 命令获取可用的配置列表
+flavor: C1M1 # 运行实例的机器配置，不同的配置单实例价格不一样，使用 qdoractl flavor 命令获取可用的配置列表
 health_check:
   path: "/health" # 健康检查的 url 相对路径，平台会试图通过访问这个 url 来判断某个实例是否存活，返回 200 即可
   timeout: 3 # 调用监控检查 API 的时间间隔，默认 3s
@@ -188,7 +188,7 @@ Build success
 Ufop:      ufop-demo-20161020
            Version:      v1
            Image:        ufop-demo:v1
-           Flavor:       M0C1
+           Flavor:       C1M1
            Desc:         hello world
 You can also see the release via run `./qdoractl release ufop-demo-20161020 -d`
 ```
@@ -206,7 +206,7 @@ ReviewState:      PASSED
 
 Releases:
 Version      Image             Flavor      Desc             Health Check Path      Health Check Timeout      LogFilePaths
-v1           ufop-demo:v1      M0C1        hello world      /health                3                         []
+v1           ufop-demo:v1      C1M1        hello world      /health                3                         []
 
 Deploys:
 Version      Region      Expect      Actual
@@ -249,7 +249,7 @@ v1           1           xs          2016-10-20 21:03:29      deploy-98b44a2b-96
 root@iZj6ciwrphxsxe9miuva60Z:~/new-ufop-demo# ./qdoractl release ufop-demo-20161020 v1 -d
 Version:                   v1
 Image:                     ufop-demo:v1
-Flavor:                    M0C1
+Flavor:                    C1M1
 Desc:                      hello world
 Health Check Path:         /health
 Health Check Timeout:      3
