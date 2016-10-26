@@ -58,6 +58,15 @@ time: 2016-10-20 20:22:45.417314444 +0800 CST
 
 然后我们开始把这个 ufop 构建成 ufop 镜像
 
+新建一个 Dockerfile 文件，内容如下：
+
+```
+FROM ubuntu
+ADD ufop-demo-2016102020 /
+RUN chmod +x ufop-demo-2016102020
+CMD ufop-demo-2016102020
+```
+
 ```
 docker build -t ufop-demo:v1 .
 docker run -it -p 9100:9100 --rm ufop-demo:v1
