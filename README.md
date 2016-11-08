@@ -64,7 +64,7 @@ time: 2016-10-20 20:22:45.417314444 +0800 CST
 FROM ubuntu
 ADD ufop-demo-2016102020 /
 RUN chmod +x ufop-demo-2016102020
-CMD ufop-demo-2016102020
+CMD /ufop-demo-2016102020
 ```
 
 ```
