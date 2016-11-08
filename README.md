@@ -224,11 +224,11 @@ Version      Region      Expect      Actual
 目前还没有实例在运行，我们来部署几个实例
 
 ```
-./qdoractl deploy ufop-demo-20161020 v1 --region xs --expect 1
+./qdoractl deploy ufop-demo-20161020 v1 --region z0 --expect 1
 ```
 
 ```
-root@iZj6ciwrphxsxe9miuva60Z:~/new-ufop-demo# ./qdoractl deploy ufop-demo-20161020 v1 --region xs --expect 1
+root@iZj6ciwrphxsxe9miuva60Z:~/new-ufop-demo# ./qdoractl deploy ufop-demo-20161020 v1 --region z0 --expect 1
 Deploy success
 Please run `./qdoractl deploy ufop-demo-20161020 --id deploy-6ed8c584-96c5-11e6-8541-6c92bf2f06d8-1476968539472398952` to view you deploy
 Please run `./qdoractl release ufop-demo-20161020 v1 -d` to view you release
