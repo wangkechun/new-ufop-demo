@@ -85,7 +85,7 @@ curl -v http://127.0.0.1:9100/health
 然后下载我们的 qdoractl 命令行工具
 
 ```
-wget http://q.hi-hi.cn/qdoractl_linux_0.3.5
+wget http://q.hi-hi.cn/qdoractl_linux_0.3.6
 
 chmod +x qdoractl_linux_0.3
 mv qdoractl_linux_0.3 qdoractl
@@ -94,7 +94,7 @@ mv qdoractl_linux_0.3 qdoractl
 
 应该就能正常运行了
 
-mac 版本： http://q.hi-hi.cn/qdoractl_darwin_0.3.5
+mac 版本： http://q.hi-hi.cn/qdoractl_darwin_0.3.6
 
 先登陆
 
